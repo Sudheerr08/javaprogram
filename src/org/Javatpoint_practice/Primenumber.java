@@ -1,6 +1,9 @@
 package org.Javatpoint_practice;
 
 import java.util.Scanner;
+import java.lang.Math;
+
+import static java.lang.Math.sqrt;
 
 public class Primenumber {
     void primetest(int a)
@@ -85,13 +88,27 @@ public class Primenumber {
         }
     }
 
+    void sunnynumber(int a)
+    {
+        int n =a+1;
+        double b = sqrt(n);
+        int c = b*b;
+        if(c==n)
+        {
+            System.out.println(" Number is sunny number"+a);
+        }
+        else
+        {
+            System.out.println("Number is not sunny"+a);
+        }
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println(" Enter the number : ");
         int number = sc.nextInt();
         Primenumber pn = new Primenumber();
-        pn.armstringtest(number);
+        pn.sunnynumber(number);
 
     }
 }
