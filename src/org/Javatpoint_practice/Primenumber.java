@@ -92,7 +92,7 @@ public class Primenumber {
     {
         int n =a+1;
         double b = sqrt(n);
-        int c = b*b;
+        double c = b*b;
         if(c==n)
         {
             System.out.println(" Number is sunny number"+a);
